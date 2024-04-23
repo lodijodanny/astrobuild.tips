@@ -1,7 +1,8 @@
 ---
-title: "Mi primera pagina"
+title: "My first page"
+layout: "../layouts/Base.astro"
 ---
 
-## Hola mundo
+## Hello world
 
-Hola mundo con Astro
+Hello page with Astro
