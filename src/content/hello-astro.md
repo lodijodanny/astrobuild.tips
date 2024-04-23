@@ -2,7 +2,7 @@
 tile: "Hello Astro"
 pubDate: 2024-04-23
 description: "Hello, this is my firs recomendation"
-image:
+image: ""
 tags: ["astro", "javascript"]
 ---
 
