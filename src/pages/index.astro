@@ -8,18 +8,20 @@ const allPosts = await Astro.glob("../content/md/*.md");
 ---
 
 <Layout title="Welcome to Astro.">
-  <main>
-    <Header title="AstroBuild.tips" />
+  <main class="">
+    <Header title="Astro Ameth" />
     <Hero />
     <ul role="list" class="link-card-grid">
       {
-        allPosts.map((item) => (
-          <Card
-            title={item?.frontmatter?.title}
-            time={item?.frontmatter?.pubDate}
-            tags={item?.frontmatter?.tags}
-          />
-        ))
+        allPosts.map((post) => {
+          return (
+            <Card
+              title={post.frontmatter.title}
+              time={post.frontmatter.pubDate}
+              tags={post.frontmatter.tags}
+            ></Card>
+          );
+        })
       }
     </ul>
   </main>

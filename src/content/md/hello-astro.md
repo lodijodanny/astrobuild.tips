@@ -1,5 +1,5 @@
 ---
-tile: "Hello Astro"
+title: "Hello Astro"
 pubDate: 2024-04-23
 description: "Hello, this is my firs recomendation"
 image: ""
