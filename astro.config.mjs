@@ -4,16 +4,10 @@ import mdx from '@astrojs/mdx';
 import react from '@astrojs/react';
 import vue from '@astrojs/vue';
 import svelte from '@astrojs/svelte';
+import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), mdx(), react(), vue(), svelte()],
-  build: {
-    // Configura la optimización de HTML
-    optimize: {
-      html: {
-        minify: false, // Desactiva la minificación de HTML
-      },
-    },
-  },
+  site: 'https://astrobuild.tips',
+  integrations: [tailwind(), mdx(), react(), vue(), svelte(), sitemap()],  
 });
