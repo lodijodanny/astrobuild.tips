@@ -15,11 +15,12 @@ const allPosts = await Astro.glob("../content/tips/*.md");
       {
         allPosts.map((post) => {
           return (
-            <Card
+          <Card
               title={post.frontmatter.title}
               time={post.frontmatter.pubDate}
               tags={post.frontmatter.tags}
-            ></Card>
+              slug={post.frontmatter.slug}
+            />
           );
         })
       }
